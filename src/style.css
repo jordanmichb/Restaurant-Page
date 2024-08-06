@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border: 1px solid;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+header div {
+    border: 1px solid;
+    flex: 1;
+}
+
+nav ul {
+    border: 1px solid;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+}
