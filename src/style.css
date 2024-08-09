@@ -9,6 +9,13 @@ header {
     padding: 2rem 1rem;
     display: flex;
     justify-content: space-around;
+    background: red;
+}
+
+body {
+    background-image: url('./images/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header div {
@@ -23,6 +30,10 @@ nav ul {
     gap: 1rem;
 }
 
-nav a {
-    text-decoration: none;
+nav button {
+    
+}
+
+#content {
+
 }
