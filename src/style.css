@@ -50,6 +50,7 @@ body {
 
 .page-header {
     font-family: 'raleway';
+    text-transform: uppercase;
 }
 
 .page-description {
@@ -80,9 +81,10 @@ header {
     width: max-content;
     margin: 0 auto;
     padding: .4rem 1.4rem;
-    color: rgb(241, 177, 59);
-    background-color: black;
-    border: 2px solid rgb(241, 177, 59);
+    color: rgb(235, 188, 57);
+    background-color: rgb(10, 10, 10);
+    border: 3px solid rgb(235, 188, 57);
+    letter-spacing: .1em;
 } 
 
 nav {
@@ -101,7 +103,8 @@ nav button {
     padding: 1rem 1rem .5rem 1rem;
     cursor: pointer;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(10, 10, 10);
+    color: rgb(10, 10, 10);
     font-size: 1.05rem;
 }
 
