@@ -1,29 +1,33 @@
 @font-face {
-    font-family: 'chantelli_antiqua';
-    src: url('./fonts/chantelli_antiqua-webfont.woff2') format('woff2');
+    font-family: 'eb garamond12';
+    src: url('./fonts/ebgaramond12-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('./fonts/raleway-regular-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'tangerine';
-    src: url('./fonts/tangerine_bold-webfont.woff2') format('woff2');
-    font-weight: bold;
+    font-family: 'engry';
+    src: url('./fonts/engry-webfont.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
+
 }
+
+
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-header {
-    border: 1px solid;
-    padding: 2rem 1rem;
-    display: flex;
-    justify-content: space-around;
-    background: red;
 }
 
 body {
@@ -33,17 +37,52 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    font-family: 'eb garamond12';
 }
 
-header div {
+
+
+
+.page {
+    word-spacing: .2em;
+}
+
+.page-header {
+    font-family: 'raleway';
+}
+
+.page-description {
+    margin-top: 1.5rem;
+    font-size: 1.05rem;
+}
+
+
+
+
+header {
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
     border: 1px solid;
-    flex: 1;
+    background: red;
+}
+
+header h1 {
+    font-family: 'engry';
+    grid-column: 2 / 3;
+    text-align: center;
+} 
+
+nav {
+    grid-column: 3 / 4;
 }
 
 nav ul {
-    border: 1px solid;
     list-style: none;
     display: flex;
+    justify-content: end;
     gap: 1rem;
 }
 
@@ -65,11 +104,7 @@ nav button {
     max-width: 60%;
     text-align: center;
     opacity: 90%;
-}
-
-#home h2, #home p {
-    margin-top: 1rem;
-    font-weight: normal;
+    line-height: 1.5em;
 }
 
 footer {
