@@ -14,6 +14,13 @@
 }
 
 @font-face {
+    font-family: 'raleway';
+    src: url('./fonts/raleway-semibold-webfont.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'engry';
     src: url('./fonts/engry-webfont.woff2') format('woff2');
     font-weight: normal;
@@ -50,11 +57,12 @@ body {
 
 .page-header {
     font-family: 'raleway';
+    font-weight: 600;
     text-transform: uppercase;
 }
 
 .page-description {
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
     font-size: 1.05rem;
 }
 
@@ -73,8 +81,6 @@ header {
 .logo-container {
     font-family: 'engry';
     grid-column: 2 / 3;
-    /* text-align: center; */
-    /* padding: 0 5%; */
 }
 
 .logo {
@@ -108,23 +114,59 @@ nav button {
     font-size: 1.05rem;
 }
 
+
+
+
 #content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
+    margin: 1rem;
 }
 
 #home {
     padding: 3rem;
-    background-color: white;
+    background-color: rgba(244, 244, 244, 0.964);
     border-radius: 5px;
-    max-width: 60%;
+    width: 60%;
+    max-width: 2000px;
     text-align: center;
     opacity: 90%;
     line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
+
+
+
 
 footer {
     background-color: rgba(244, 244, 244, 0.964);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices 600px and up */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices 768px and up */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices 992px and up */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices 1200px and up */
+@media only screen and (min-width: 1200px) {
+
 }
