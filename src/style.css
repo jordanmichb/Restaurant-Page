@@ -75,7 +75,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     background-color: rgba(244, 244, 244, 0.964);
-    gap: 1rem;
+    gap: 1em;
 }
 
 .logo-container {
@@ -106,7 +106,7 @@ nav ul {
 
 nav button {
     font-family: 'raleway';
-    padding: 1rem 1rem .5rem 1rem;
+    padding: .5em;
     cursor: pointer;
     border: none;
     border-bottom: 2px solid rgb(10, 10, 10);
@@ -157,13 +157,23 @@ footer {
 }
 
 /* Medium devices 768px and up */
-@media only screen and (min-width: 768px) {
-
+@media only screen and (max-width: 585px) {
+    
 }
 
-/* Large devices 992px and up */
-@media only screen and (min-width: 992px) {
+/* Large devices 1020px and up */
+@media only screen and (max-width: 1020px) {
+    .logo {
+        font-size: 1.5rem;
+    }
 
+    .logo-container {
+        grid-column: 1 / 2;
+    }
+
+    nav button {
+        font-size: 0.9rem;
+    }
 }
 
 /* Extra large devices 1200px and up */
