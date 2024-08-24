@@ -98,30 +98,24 @@ header {
 
 
 
-.nav-large {
+nav {
     grid-column: 3 / 4;
     justify-self: end;
 }
 
 nav ul {
     list-style: none;
-}
-
-.nav-large ul {
     display: flex;
     gap: 1rem;
 }
 
-nav ul li button {
+nav ul button {
     font-family: 'raleway';
     padding: .5em;
     cursor: pointer;
     border: none;
     color: rgb(10, 10, 10);
     font-size: 1.05rem;
-}
-
-.nav-large button {
     border-bottom: 2px solid rgb(10, 10, 10);
 }
 
@@ -129,12 +123,20 @@ nav ul li button {
     display: none;
 }
 
-.nav-small.visible {
+.nav-small ul button {
+    border-bottom: none;
+}
+
+.nav-small.visible, .nav-small ul {
     display: unset;
+}
+
+.nav-small.visible {
     /* position: absolute;
     top: 100%;
     width: 100%;
     background-color: white; */
+    
     text-align: center;
     flex-basis: 100%;
 }
@@ -203,7 +205,7 @@ footer {
         flex-wrap: wrap;
     }
 
-    .nav-large {
+    header nav {
         display: none;
     }
 
@@ -224,7 +226,7 @@ footer {
         grid-column: 1 / 2;
     }
 
-    .nav-large ul li button {
+    nav ul li button {
         font-size: 0.9rem;
     }
 }
