@@ -51,38 +51,22 @@ body {
 
 
 
-.page {
-    word-spacing: .2em;
-}
-
-.page-header {
-    font-family: 'raleway';
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.page-description {
-    /* margin-top: 1.5rem; */
-    font-size: 1.05rem;
-}
-
-
-
-
+/********************************/
+/* Styling for header           */
+/********************************/
 header {
     padding: 1rem;
     display: grid;
-    /* position: relative; */
+    position: relative;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    background-color: rgba(244, 244, 244, 0.964);
+    background-color: #edede9;
     gap: 1em;
 }
 
 .logo-container {
     font-family: 'engry';
     grid-column: 2 / 3;
-
 }
 
 .logo {
@@ -95,9 +79,7 @@ header {
     letter-spacing: .1em;
 } 
 
-
-
-
+/* Header navigation on larger screen size */
 nav {
     grid-column: 3 / 4;
     justify-self: end;
@@ -116,31 +98,39 @@ nav ul button {
     border: none;
     color: rgb(10, 10, 10);
     font-size: 1.05rem;
-    border-bottom: 2px solid rgb(10, 10, 10);
+    border-bottom: 1px solid rgb(10, 10, 10);
+    background-color: #edede9;
 }
 
+/* Header navigation on smaller screen size when invisible */
 .nav-small {
-    display: none;
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    background-color: #edede9;
+    transition: 0.5s;
 }
 
 .nav-small ul button {
-    border-bottom: none;
+    /* border-bottom: none; */
+    margin-bottom: 1rem;;
 }
 
+/* Header navigation on smaller screen size when visible */
 .nav-small.visible, .nav-small ul {
     display: unset;
 }
 
 .nav-small.visible {
-    /* position: absolute;
-    top: 100%;
-    width: 100%;
-    background-color: white; */
-    
-    text-align: center;
-    flex-basis: 100%;
+    visibility: visible;
+    translate: 0 99%;
 }
 
+/* Hamburger becomes visible on smaller screen, click to show menu */
 .hamburger {
     display: none;
     border: none;
@@ -158,17 +148,38 @@ nav ul button {
 
 
 
+/********************************/
+/* Styling for page content     */
+/********************************/
+.page {
+    word-spacing: .2em;
+}
+
+.page-header {
+    font-family: 'raleway';
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.page-description {
+    font-size: 1.05rem;
+}
+
+
+
+
 #content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
     margin: 1rem;
+    z-index: -2;
 }
 
 #home {
     padding: 3rem;
-    background-color: rgba(244, 244, 244, 0.964);
+    background-color: rgba(237, 237, 233, 0.965);
     border-radius: 5px;
     width: 60%;
     max-width: 2000px;
@@ -202,10 +213,9 @@ footer {
     header {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
     }
 
-    header nav {
+    header nav:not(.nav-small) {
         display: none;
     }
 
@@ -213,6 +223,10 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 4px;
+    }
+
+    .page-header {
+        font-size: 1rem;
     }
 }
 

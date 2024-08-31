@@ -4,7 +4,6 @@ const hamburger = document.querySelector(".hamburger");
 
 
 function setNav() {
-    console.log("called")
     const query = window.matchMedia("(max-width: 550px)");
     if (query.matches) nav.classList.add("nav-small");
     else nav.classList.remove("nav-small");
