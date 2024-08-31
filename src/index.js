@@ -6,7 +6,10 @@ const hamburger = document.querySelector(".hamburger");
 function setNav() {
     const query = window.matchMedia("(max-width: 550px)");
     if (query.matches) nav.classList.add("nav-small");
-    else nav.classList.remove("nav-small");
+    else {
+        nav.classList.remove("nav-small");
+        nav.classList.remove("visible");
+    }
 }
 setNav();
 
