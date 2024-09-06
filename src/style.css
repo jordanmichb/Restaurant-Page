@@ -73,6 +73,12 @@ header {
     /* box-shadow: 0 1px 20px rgba(0, 0, 0, 0.75); */
 }
 
+header button {
+    background-color: #edede9;
+    cursor: pointer;
+    border: none;
+}
+
 .logo-container {
     font-family: 'engry';
     grid-column: 2 / 3;
@@ -103,12 +109,9 @@ nav ul {
 nav ul button {
     font-family: 'raleway';
     padding: .5em;
-    cursor: pointer;
-    border: none;
     color: rgb(10, 10, 10);
     font-size: 1.05rem;
     border-bottom: 1px solid rgb(10, 10, 10);
-    background-color: #edede9;
 }
 
 /* Header navigation on smaller screen size when invisible */
@@ -125,8 +128,7 @@ nav ul button {
 }
 
 .nav-small ul button {
-    /* border-bottom: none; */
-    margin-bottom: 1rem;;
+    margin-bottom: 1rem;
 }
 
 /* Header navigation on smaller screen size when visible */
@@ -142,21 +144,18 @@ nav ul button {
 /* Hamburger menu becomes visible on smaller screen, click to show menu */
 .menu {
     display: none;
-    border: none;
-    
 }
 
 .menu span {
-    height: 5px;
-    border: 1px solid;
-    width: 40px;
-    background: white;
+    height: 2px;
+    width: 35px;
+    background-color: rgb(10, 10, 10);
     border-radius: 1rem;
-    transition: transform 0.3s, opacity 0.1s;
+    transition: transform 0.3s, opacity 0.2s;
 }
 
 .menu.active span:first-child {
-    transform: rotate(-45deg) translate(-6px, 7px);
+    transform: rotate(-45deg) translate(-5px, 5px);
 }
 
 .menu.active span:nth-child(2) {
@@ -164,7 +163,7 @@ nav ul button {
 }
 
 .menu.active span:last-child {
-    transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-5px, -5px);
 }
 
 
@@ -227,7 +226,7 @@ footer {
     text-align: center;
     padding: 0.25rem;
     font-family: 'raleway';
-    font-size: .8rem;
+    font-size: .7rem;
     letter-spacing: 0.1em;
     /* box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.75); */
 }
@@ -256,7 +255,7 @@ footer {
     .menu {
         display: flex;
         flex-direction: column;
-        gap: 4px;
+        gap: 5px;
     }
 
     .component {
