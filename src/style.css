@@ -70,6 +70,7 @@ header {
     align-items: center;
     background-color: #edede9;
     gap: 1em;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.75);
 }
 
 .logo-container {
@@ -161,6 +162,7 @@ nav ul button {
 /********************************/
 .component {
     word-spacing: .2em;
+    box-shadow: 5px 10px 30px rgba(31, 31, 31, 0.75);
 }
 
 .component-header {
@@ -209,7 +211,13 @@ nav ul button {
 
 
 footer {
-    background-color: rgba(244, 244, 244, 0.964);
+    background-color: #edede9;
+    text-align: center;
+    padding: 0.25rem;
+    font-family: 'raleway';
+    font-size: .8rem;
+    letter-spacing: 0.1em;
+    box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.75);
 }
 
 /* Extra small devices (phones, 600px and down) */
