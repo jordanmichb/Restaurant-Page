@@ -1,6 +1,6 @@
 //const navSmall = document.querySelector(".nav-small");
 const nav = document.querySelector("nav");
-const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
 
 
 function setNav() {
@@ -9,6 +9,7 @@ function setNav() {
     else {
         nav.classList.remove("nav-small");
         nav.classList.remove("visible");
+        menu.classList.remove("active");
     }
 }
 setNav();
@@ -17,7 +18,8 @@ window.addEventListener('resize', setNav);
 
 
 
-hamburger.onclick = function() {
+menu.onclick = function() {
     //navSmall.classList.toggle("hidden");
     nav.classList.toggle("visible");
+    menu.classList.toggle("active");
 }

@@ -70,7 +70,7 @@ header {
     align-items: center;
     background-color: #edede9;
     gap: 1em;
-    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.75);
+    /* box-shadow: 0 1px 20px rgba(0, 0, 0, 0.75); */
 }
 
 .logo-container {
@@ -139,19 +139,32 @@ nav ul button {
     translate: 0 99%;
 }
 
-/* Hamburger becomes visible on smaller screen, click to show menu */
-.hamburger {
+/* Hamburger menu becomes visible on smaller screen, click to show menu */
+.menu {
     display: none;
     border: none;
+    
 }
 
-.hamburger .line {
+.menu span {
     height: 5px;
     border: 1px solid;
     width: 40px;
     background: white;
     border-radius: 1rem;
-    transition: 0.3s;
+    transition: transform 0.3s, opacity 0.1s;
+}
+
+.menu.active span:first-child {
+    transform: rotate(-45deg) translate(-6px, 7px);
+}
+
+.menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu.active span:last-child {
+    transform: rotate(45deg) translate(-6px, -6px);
 }
 
 
@@ -162,7 +175,7 @@ nav ul button {
 /********************************/
 .component {
     word-spacing: .2em;
-    box-shadow: 5px 10px 30px rgba(31, 31, 31, 0.75);
+    /* box-shadow: 5px 10px 30px rgba(31, 31, 31, 0.75); */
 }
 
 .component-header {
@@ -170,7 +183,6 @@ nav ul button {
     font-weight: 600;
     text-transform: uppercase;
     padding: 2em 1.5em;
-
 }
 
 .component-description {
@@ -217,7 +229,7 @@ footer {
     font-family: 'raleway';
     font-size: .8rem;
     letter-spacing: 0.1em;
-    box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.75);
+    /* box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.75); */
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -241,7 +253,7 @@ footer {
         display: none;
     }
 
-    .hamburger {
+    .menu {
         display: flex;
         flex-direction: column;
         gap: 4px;
