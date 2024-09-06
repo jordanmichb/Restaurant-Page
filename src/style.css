@@ -37,6 +37,12 @@
     box-sizing: border-box;
 }
 
+a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 body {
     height: 100vh;
     background-image: url('./images/background.jpg');
@@ -46,6 +52,8 @@ body {
     flex-direction: column;
     font-family: 'eb garamond12';
     color: rgb(10, 10, 10);
+    position: relative;
+    z-index: -3;
 }
 
 
@@ -151,20 +159,26 @@ nav ul button {
 /********************************/
 /* Styling for page content     */
 /********************************/
-.page {
+.component {
     word-spacing: .2em;
 }
 
-.page-header {
+.component-header {
     font-family: 'raleway';
     font-weight: 600;
     text-transform: uppercase;
+    padding: 2em 1.5em;
+
 }
 
-.page-description {
-    font-size: 1.05rem;
+.component-description {
+    font-size: 1.05em;
+    padding: 0 2em;
 }
 
+.component a {
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
 
 
 
@@ -178,7 +192,7 @@ nav ul button {
 }
 
 #home {
-    padding: 3rem;
+    /* padding: 3rem; */
     background-color: rgba(237, 237, 233, 0.965);
     border-radius: 5px;
     width: 60%;
@@ -186,9 +200,9 @@ nav ul button {
     text-align: center;
     opacity: 90%;
     line-height: 1.5em;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.5rem; */
 }
 
 
@@ -225,8 +239,8 @@ footer {
         gap: 4px;
     }
 
-    .page-header {
-        font-size: 1rem;
+    .component {
+        font-size: 0.9em;
     }
 }
 
