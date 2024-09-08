@@ -70,7 +70,6 @@ header {
     align-items: center;
     background-color: #edede9;
     gap: 1em;
-    /* box-shadow: 0 1px 20px rgba(0, 0, 0, 0.75); */
 }
 
 header button {
@@ -174,7 +173,13 @@ nav ul button {
 /********************************/
 .component {
     word-spacing: .2em;
-    /* box-shadow: 5px 10px 30px rgba(31, 31, 31, 0.75); */
+    background-color: rgba(237, 237, 233, 0.965);
+    border-radius: 5px;
+    width: 60%;
+    max-width: 2000px;
+    text-align: center;
+    opacity: 90%;
+    line-height: 1.5em;
 }
 
 .component-header {
@@ -205,22 +210,15 @@ nav ul button {
 }
 
 #home {
-    /* padding: 3rem; */
-    background-color: rgba(237, 237, 233, 0.965);
-    border-radius: 5px;
-    width: 60%;
-    max-width: 2000px;
-    text-align: center;
-    opacity: 90%;
-    line-height: 1.5em;
-    /* display: flex;
-    flex-direction: column;
-    gap: 1.5rem; */
+    
 }
 
 
 
 
+/********************************/
+/* Styling for footer           */
+/********************************/
 footer {
     background-color: #edede9;
     text-align: center;
@@ -228,17 +226,27 @@ footer {
     font-family: 'raleway';
     font-size: .7rem;
     letter-spacing: 0.1em;
-    /* box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.75); */
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
 
-}
 
-/* Small devices 600px and up */
-@media only screen and (min-width: 600px) {
 
+/********************************/
+/* Media Queries                */
+/********************************/
+/* 880px and below */
+@media only screen and (max-width: 880px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .logo-container {
+        grid-column: 1 / 2;
+    }
+
+    nav ul li button {
+        font-size: 0.9rem;
+    }
 }
 
 /* 550px and below */
@@ -260,25 +268,13 @@ footer {
 
     .component {
         font-size: 0.9em;
+        width: 90%;
     }
 }
 
-/* 880px and below */
-@media only screen and (max-width: 880px) {
+/* 380px and below */
+@media only screen and (max-width: 380px) {
     .logo {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
-
-    .logo-container {
-        grid-column: 1 / 2;
-    }
-
-    nav ul li button {
-        font-size: 0.9rem;
-    }
-}
-
-/* Extra large devices 1200px and up */
-@media only screen and (min-width: 1200px) {
-
 }
