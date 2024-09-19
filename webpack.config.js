@@ -4,9 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: './src/index.js',
     devtool: 'inline-source-map',
+    mode: 'development',
     devServer: {
         static: './dist',
-        watchFiles: ['./src/template.html'],
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -34,8 +34,5 @@ module.exports = {
                 type: 'asset/resource',
             },
         ],
-    },
-    optimization: {
-        runtimeChunk: 'single',
     },
 };
