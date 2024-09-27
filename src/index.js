@@ -1,10 +1,11 @@
 import './style.css';
 import loadHome from'./home.js';
+import loadMenu from'./menu.js';
 
 
 
 const nav = document.querySelector("nav");
-const menu = document.querySelector(".menu");
+const hamburger = document.querySelector(".hamburger");
 
 /******************************************************/
 /* Controls how nav menu appears based on screen size */
@@ -17,7 +18,7 @@ function setNav() {
     else {
         nav.classList.remove("nav-small");
         nav.classList.remove("visible");
-        menu.classList.remove("active");
+        hamburger.classList.remove("active");
     }
 }
 // Initial call to set nav styles
@@ -27,9 +28,10 @@ setNav();
 window.addEventListener('resize', setNav);
 
 // When icon is clicked, menu shows/hides and icon transforms to hamburger/X
-menu.onclick = function() {
+hamburger.onclick = function() {
     nav.classList.toggle("visible");
-    menu.classList.toggle("active");
+    hamburger.classList.toggle("active");
 }
 
-loadHome();
+//loadHome();
+loadMenu();

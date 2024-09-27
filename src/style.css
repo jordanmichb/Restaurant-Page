@@ -3,7 +3,13 @@
     src: url('./fonts/ebgaramond12-regular-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'eb garamond08';
+    src: url('./fonts/ebgaramond08-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
@@ -141,11 +147,11 @@ nav ul button {
 }
 
 /* Hamburger menu becomes visible on smaller screen, click to show menu */
-.menu {
+.hamburger {
     display: none;
 }
 
-.menu span {
+.hamburger span {
     height: 2px;
     width: 35px;
     background-color: rgb(10, 10, 10);
@@ -153,32 +159,32 @@ nav ul button {
     transition: transform 0.3s, opacity 0.2s;
 }
 
-.menu.active span:first-child {
+.hamburger.active span:first-child {
     transform: rotate(-45deg) translate(-5px, 5px);
 }
 
-.menu.active span:nth-child(2) {
+.hamburger.active span:nth-child(2) {
     opacity: 0;
 }
 
-.menu.active span:last-child {
+.hamburger.active span:last-child {
     transform: rotate(45deg) translate(-5px, -5px);
 }
 
 
 
 
-/********************************/
-/* Styling for page content     */
-/********************************/
+/**************************************/
+/* Styling for basic page content     */
+/**************************************/
 .component {
     word-spacing: .2em;
-    background-color: rgba(237, 237, 233, 0.965);
+    background-color: rgba(237, 237, 233);
     border-radius: 5px;
     width: 60%;
-    max-width: 2000px;
+    max-width: 1000px;
     text-align: center;
-    opacity: 90%;
+    /* opacity: 90%; */
     line-height: 1.5em;
 }
 
@@ -209,7 +215,47 @@ nav ul button {
     z-index: -2;
 }
 
+/*************************************/
+/* Styling for menu page content     */
+/*************************************/
+.menu {
+    width: 80%;
+    text-align: unset;
+}
 
+.menu-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 1em;
+}
+
+.menu-header {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1em 0 2em 0;
+}
+
+.menu-item {
+    padding-left: 2em;
+}
+
+.item-name {
+    font-size: 1.35rem;
+    padding: 0;
+    padding-bottom: .2em;
+    text-transform: uppercase;
+    font-family: 'eb garamond08';
+}
+
+.item-price {
+    float: right;
+    font-size: 1.25rem;
+}
+
+.item-text {
+    padding: 0;
+    font-size: 1.05em;
+}
 
 
 /********************************/
@@ -256,7 +302,7 @@ footer {
         display: none;
     }
 
-    .menu {
+    .hamburger {
         display: flex;
         flex-direction: column;
         gap: 5px;

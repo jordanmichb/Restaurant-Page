@@ -1,6 +1,5 @@
 function createHome() {
     const home = document.createElement('div');
-    home.id = 'home';
     home.classList.add('component');
 
     const header = document.createElement('h2');
