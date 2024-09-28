@@ -226,17 +226,17 @@ nav ul button {
 .menu-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 1em;
 }
 
 .menu-header {
     text-align: center;
     font-size: 2rem;
     padding: 1em 0 2em 0;
+    text-transform: capitalize;
 }
 
 .menu-item {
-    padding-left: 2em;
+    padding: 0 2em 2em 2em;
 }
 
 .item-name {
