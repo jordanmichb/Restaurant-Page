@@ -236,7 +236,7 @@ nav ul button {
 }
 
 .menu-item {
-    padding: 0 2em 2em 2em;
+    padding: 0 2em 3em 2em;
 }
 
 .item-name {
@@ -250,6 +250,7 @@ nav ul button {
 .item-price {
     float: right;
     font-size: 1.25rem;
+    margin-left: 1rem;
 }
 
 .item-text {
@@ -288,6 +289,10 @@ footer {
 
     nav ul li button {
         font-size: 0.9rem;
+    }
+
+    .menu-section {
+        grid-template-columns: 1fr;
     }
 }
 
