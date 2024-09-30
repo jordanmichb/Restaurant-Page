@@ -1,3 +1,5 @@
+export const sections = ['starters', 'mains'];
+
 export const starters = [
     {
         price: '$10',

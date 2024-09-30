@@ -1,3 +1,6 @@
+/********************************************************/
+/* Create all necesssary DOM elements to build homepage */
+/********************************************************/
 function createHome() {
     const home = document.createElement('div');
     home.classList.add('component');
@@ -32,6 +35,9 @@ function createHome() {
     return home;
 }
 
+/*******************************************************/
+/* Function to be called in index.js when loading home */
+/*******************************************************/
 function loadHome() {
     const content = document.querySelector('#content');
     content.textContent = "";
