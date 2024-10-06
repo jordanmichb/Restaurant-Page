@@ -1,6 +1,7 @@
 import './style.css';
 import loadHome from'./home.js';
 import loadMenu from'./menu.js';
+import loadAbout from './about.js';
 
 
 
@@ -8,6 +9,7 @@ const nav = document.querySelector('nav');
 const hamburger = document.querySelector('.hamburger');
 const homeBtn = document.querySelector('#home-btn');
 const menuBtn = document.querySelector('#menu-btn');
+const aboutBtn = document.querySelector('#about-btn');
 
 /******************************************************/
 /* Controls how nav menu appears based on screen size */
@@ -40,8 +42,10 @@ hamburger.onclick = function() {
 /************************************/
 homeBtn.addEventListener('click', loadHome);
 menuBtn.addEventListener('click', loadMenu);
+aboutBtn.addEventListener('click', loadAbout);
 
 
 
 
-loadHome();
+//loadHome();
+loadAbout();
