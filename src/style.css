@@ -186,6 +186,7 @@ nav ul button {
     text-align: center;
     /* opacity: 90%; */
     line-height: 1.5em;
+    animation: fade-in 1s;
 }
 
 .component-header {
@@ -325,3 +326,13 @@ footer {
         font-size: 1rem;
     }
 }
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
