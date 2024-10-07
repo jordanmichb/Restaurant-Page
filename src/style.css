@@ -189,13 +189,14 @@ nav ul button {
 
 
 .component {
+    padding: 2rem;
     word-spacing: .2em;
+    letter-spacing: .05em;
     background-color: rgba(237, 237, 233);
     border-radius: 5px;
     width: 60%;
     max-width: 1000px;
     text-align: center;
-    /* opacity: 90%; */
     line-height: 1.5em;
     animation: fade-in 1s;
 }
@@ -204,12 +205,11 @@ nav ul button {
     font-family: 'raleway';
     font-weight: 600;
     text-transform: uppercase;
-    padding: 2em 1.5em;
 }
 
 .component-text {
-    font-size: 1.05em;
-    padding: 0 2em;
+    font-size: 1.1em;
+    margin: 2rem 0;
 }
 
 .component a {
@@ -262,14 +262,24 @@ nav ul button {
 /**************************************/
 /* Styling for about page content     */
 /**************************************/
+.about-text {
+    padding-bottom: 3em;
+    border-bottom: 1px solid rgb(130, 130, 130);
+}
+
 .info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .info-component {
     display: flex;
     flex-direction: column;
+    gap: .5em;
+}
+
+.info span {
+    font-size: 1.1em;
 }
 
 
