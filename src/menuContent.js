@@ -1,11 +1,40 @@
-export const sections = ['starters', 'mains'];
+export const sections = ['cocktails', 'starters', 'mains'];
+
+export const cocktails = [
+    {
+        price: '$12',
+        name: 'Margarita',
+        description: 'Blanco tequila, fresh lime juice, orange liqueur, agave syrup',
+    },
+    {
+        price: '$12',
+        name: 'Martini',
+        description: 'Vodka, dry vermouth',
+    },
+    {
+        price: '$14',
+        name: 'Mai Tai',
+        description: 'White rum, black rum, orange liqueur, lime juice, almond syrup',
+    },
+    {
+        price: '$13',
+        name: 'Bloody Mary',
+        description: 'Vodka, tomato juice, fresh lemon juice, tabasco, Worcesterhire sauce'+
+        'pinch of salt and pepper',
+    },
+    {
+        price: '$14',
+        name: 'Cosmopolitan',
+        description: 'Absolut Citron vodka, Cointreau liqueur, fresh lime juice, cranberry juice',
+    },
+]
 
 export const starters = [
     {
         price: '$10',
         name: 'Hot Chicken Sliders',
-        description: 'Two fried chicken pieces tossed in our Nashville hot sauce, '+
-        'honey mustard, kale, cabbage slaw, dill pickle, sweet Hawaiian buns',
+        description: 'Two fried chicken pieces tossed in Nashville hot sauce, '+
+        'served on sweet Hawaiian buns with honey mustard, cabbage slaw, dill pickles',
     },
     {
         price: '$13',

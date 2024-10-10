@@ -34,8 +34,15 @@
 
 }
 
+:root {
+    --bg-color1: #231c15e9;
+    --bg-color2: #edede6;
 
-
+    --text-dark: #101010;
+    --text-light: #e2e2e2;
+    
+    --border-color1: #bebebe;
+}
 
 * {
     margin: 0;
@@ -44,7 +51,7 @@
 }
 
 a {
-    color: rgb(10, 10, 10);
+    color: var(--text-dark);
     text-decoration: none;
     cursor: pointer;
 }
@@ -57,7 +64,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'eb garamond12';
-    color: rgb(10, 10, 10);
+    color: var(--text-dark);
     position: relative;
     z-index: -3;
 }
@@ -74,12 +81,12 @@ header {
     position: relative;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    background-color: #edede9;
+    background-color: var(--bg-color1);
     gap: 1em;
 }
 
 header button {
-    background-color: #edede9;
+    background-color: #ffffff00;
     cursor: pointer;
     border: none;
 }
@@ -94,7 +101,7 @@ header button {
     margin: 0 auto;
     padding: .4rem 1.4rem;
     color: rgb(235, 188, 57);
-    background-color: rgb(10, 10, 10);
+    background-color: var(--text-dark);
     border: 3px solid rgb(235, 188, 57);
     letter-spacing: .1em;
 } 
@@ -114,9 +121,9 @@ nav ul {
 nav ul button {
     font-family: 'raleway';
     padding: .5em;
-    color: rgb(10, 10, 10);
+    color: var(--text-light);
     font-size: 1.05rem;
-    border-bottom: 1px solid rgb(10, 10, 10);
+    border-bottom: 1px solid var(--text-light);
 }
 
 /* Header navigation on smaller screen size when invisible */
@@ -128,7 +135,7 @@ nav ul button {
     bottom: 0;
     width: 100%;
     z-index: -1;
-    background-color: #edede9;
+    background-color: var(--bg-color1);
     transition: 0.5s;
 }
 
@@ -154,7 +161,8 @@ nav ul button {
 .hamburger span {
     height: 2px;
     width: 35px;
-    background-color: rgb(10, 10, 10);
+    background-color: var(--text-light);
+    outline: 1px solid var(--text-dark);
     border-radius: 1rem;
     transition: transform 0.3s, opacity 0.2s;
 }
@@ -189,10 +197,11 @@ nav ul button {
 
 
 .component {
+    border: 1px solid var(--border-color1);
     padding: 2rem;
     word-spacing: .2em;
     letter-spacing: .05em;
-    background-color: rgba(237, 237, 233);
+    background-color: var(--bg-color2);
     border-radius: 5px;
     width: 80%;
     max-width: 1000px;
@@ -215,6 +224,9 @@ nav ul button {
 .component a {
     border-bottom: 1px solid rgb(150, 150, 150);
 }
+
+
+
 
 /*************************************/
 /* Styling for menu page content     */
@@ -259,6 +271,9 @@ nav ul button {
     font-size: 1.05em;
 }
 
+
+
+
 /**************************************/
 /* Styling for about page content     */
 /**************************************/
@@ -289,16 +304,19 @@ nav ul button {
 }
 
 
+
+
 /********************************/
 /* Styling for footer           */
 /********************************/
 footer {
-    background-color: #edede9;
+    background-color: var(--bg-color1);
     text-align: center;
     padding: 0.25rem;
     font-family: 'raleway';
     font-size: .7rem;
     letter-spacing: 0.1em;
+    color: var(--text-light);
 }
 
 
@@ -375,6 +393,12 @@ footer {
     }
 }
 
+
+
+
+/********************************/
+/* Keyframes                    */
+/********************************/
 @keyframes fade-in {
     0% {
       opacity: 0;

@@ -47,5 +47,4 @@ aboutBtn.addEventListener('click', loadAbout);
 
 
 
-//loadHome();
-loadAbout();
+loadHome();
