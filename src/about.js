@@ -2,26 +2,6 @@ function createInfo() {
     const info = document.createElement('div');
     info.classList.add('info');
 
-    /***********************/
-    /* Conttact Section    */
-    /***********************/
-    const contactHeader = document.createElement('h3');
-    contactHeader.classList.add('component-header');
-    contactHeader.textContent = 'Contact';
-
-    const contact = document.createElement('div');
-    contact.classList.add('info-component');
-
-    const phone = document.createElement('span');
-    phone.textContent = '(123) 456 - 9780';
-
-    const email = document.createElement('span');
-    email.textContent = 'thevillage@gmail.com';
-
-    contact.appendChild(contactHeader);
-    contact.appendChild(phone);
-    contact.appendChild(email);
-
     /**********************/
     /* Hours Section      */
     /**********************/
@@ -53,14 +33,25 @@ function createInfo() {
     const sun = document.createElement('span');
     sun.textContent = 'Sun 11:30am - 9:00pm';
 
-    hours.appendChild(hoursHeader);
-    hours.appendChild(mon);
-    hours.appendChild(tues);
-    hours.appendChild(wed);
-    hours.appendChild(thurs);
-    hours.appendChild(fri);
-    hours.appendChild(sat);
-    hours.appendChild(sun);
+    /***********************/
+    /* Conttact Section    */
+    /***********************/
+    const contactHeader = document.createElement('h3');
+    contactHeader.classList.add('component-header');
+    contactHeader.textContent = 'Contact';
+
+    const contact = document.createElement('div');
+    contact.classList.add('info-component');
+
+    const phone = document.createElement('span');
+    phone.textContent = '(123) 456 - 9780';
+
+    const email = document.createElement('span');
+    email.textContent = 'thevillage@gmail.com';
+
+    contact.appendChild(contactHeader);
+    contact.appendChild(phone);
+    contact.appendChild(email);
 
     /**********************/
     /* Address Section    */
@@ -86,9 +77,19 @@ function createInfo() {
     address.appendChild(city);
     address.appendChild(country);
 
-    info.appendChild(contact);
+    hours.appendChild(hoursHeader);
+    hours.appendChild(mon);
+    hours.appendChild(tues);
+    hours.appendChild(wed);
+    hours.appendChild(thurs);
+    hours.appendChild(fri);
+    hours.appendChild(sat);
+    hours.appendChild(sun);
+
     info.appendChild(hours);
+    info.appendChild(contact);
     info.appendChild(address);
+    
 
     return info;
 }

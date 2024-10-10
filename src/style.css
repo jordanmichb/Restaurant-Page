@@ -194,7 +194,7 @@ nav ul button {
     letter-spacing: .05em;
     background-color: rgba(237, 237, 233);
     border-radius: 5px;
-    width: 60%;
+    width: 80%;
     max-width: 1000px;
     text-align: center;
     line-height: 1.5em;
@@ -268,8 +268,10 @@ nav ul button {
 }
 
 .info {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
 }
 
 .info-component {
@@ -280,6 +282,10 @@ nav ul button {
 
 .info span {
     font-size: 1.1em;
+}
+
+.info-component:first-child {
+    grid-row: 1 / 3;
 }
 
 
@@ -315,8 +321,28 @@ footer {
         font-size: 0.9rem;
     }
 
+    .component {
+        width: 90%;
+    }
+
+    .menu {
+        padding: 1rem;
+    }
+
     .menu-section {
         grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .info {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+        gap: 2rem;
+    }
+
+    .info-component:first-child {
+        grid-row: 1 / 2;
     }
 }
 
@@ -339,7 +365,6 @@ footer {
 
     .component {
         font-size: 0.9em;
-        width: 90%;
     }
 }
 
