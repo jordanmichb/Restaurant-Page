@@ -34,7 +34,7 @@ function createInfo() {
     sun.textContent = 'Sun 11:30am - 9:00pm';
 
     /***********************/
-    /* Conttact Section    */
+    /* Contact Section    */
     /***********************/
     const contactHeader = document.createElement('h3');
     contactHeader.classList.add('component-header');
@@ -97,6 +97,7 @@ function createInfo() {
 function createAbout() {
     const about = document.createElement('div');
     about.classList.add('component');
+    about.classList.add('about');
 
     const header = document.createElement('h2');
     header.classList.add('component-header');

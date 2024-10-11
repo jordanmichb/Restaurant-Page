@@ -36,7 +36,7 @@
 
 :root {
     --bg-color1: #231c15e9;
-    --bg-color2: #edede6;
+    --bg-color2: #edede6f0;
 
     --text-dark: #101010;
     --text-light: #e2e2e2;
@@ -77,11 +77,11 @@ body {
 /********************************/
 header {
     padding: 1rem;
-    display: grid;
     position: relative;
+    background-color: var(--bg-color1);
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    background-color: var(--bg-color1);
     gap: 1em;
 }
 
@@ -190,11 +190,9 @@ nav ul button {
     justify-content: center;
     align-items: center;
     flex: 1;
-    margin: 150px 20px;
+    margin: 50px 20px;
     z-index: -2;
 }
-
-
 
 .component {
     border: 1px solid var(--border-color1);
@@ -312,7 +310,7 @@ nav ul button {
 footer {
     background-color: var(--bg-color1);
     text-align: center;
-    padding: 0.25rem;
+    padding: 1em;
     font-family: 'raleway';
     font-size: .7rem;
     letter-spacing: 0.1em;
@@ -381,7 +379,7 @@ footer {
         gap: 5px;
     }
 
-    .component {
+    .component:not(.about) {
         font-size: 0.9em;
     }
 }
@@ -389,7 +387,19 @@ footer {
 /* 380px and below */
 @media only screen and (max-width: 380px) {
     .logo {
-        font-size: 1rem;
+        font-size: .9rem;
+    }
+
+    .hamburger span {
+        width: 25px;
+    }
+
+    .menu {
+        font-size: 0.8em;
+    }
+
+    .item-text {
+        font-size: 1.2em;
     }
 }
 
