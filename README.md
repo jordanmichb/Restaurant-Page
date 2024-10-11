@@ -6,12 +6,17 @@ Try it out at: https://jordanmichb.github.io/Restaurant-Page/
 
 A responsive, mock restaurant page created using Webpack, HTML, CSS, and JavaScript.
 
+https://github.com/user-attachments/assets/ed1a9c79-a2b5-4682-bf78-ad99f0044b6d.mov
+
+https://github.com/user-attachments/assets/1feede4f-a87a-4d19-89f9-76cad3bebad6.mov
 
 
-![](https://github.com/user-attachments/assets/d5ecbeb7-8282-472a-b6ad-4a74a3cd512f)
 
 
-![](https://github.com/user-attachments/assets/f61a353f-cce3-4bc2-9c2c-d2beefbdd9c5)
+
+
+
+
 
 
 
