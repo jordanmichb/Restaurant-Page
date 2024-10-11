@@ -167,6 +167,7 @@ nav ul button {
     transition: transform 0.3s, opacity 0.2s;
 }
 
+/* When clicked, menu shows and hamburger becomes X icon */
 .hamburger.active span:first-child {
     transform: rotate(-45deg) translate(-5px, 5px);
 }

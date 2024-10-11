@@ -1,3 +1,6 @@
+/********************************************************/
+/* Create the restaurants info section under about text */
+/********************************************************/
 function createInfo() {
     const info = document.createElement('div');
     info.classList.add('info');
@@ -13,25 +16,25 @@ function createInfo() {
     hoursHeader.textContent = 'Hours';
 
     const mon = document.createElement('span');
-    mon.textContent = 'Mon 11:30am - 9:00pm';
+    mon.textContent = 'Mon 11:30am - 10:00pm';
 
     const tues = document.createElement('span');
-    tues.textContent = 'Tues 11:30am - 9:00pm';
+    tues.textContent = 'Tues 11:30am - 10:00pm';
 
     const wed = document.createElement('span');
-    wed.textContent = 'Wed 11:30am - 9:00pm';
+    wed.textContent = 'Wed 11:30am - 10:00pm';
 
     const thurs = document.createElement('span');
-    thurs.textContent = 'Thurs 11:30am - 9:00pm';
+    thurs.textContent = 'Thurs 11:30am - 10:00pm';
 
     const fri = document.createElement('span');
-    fri.textContent = 'Fri 11:30am - 9:00pm';
+    fri.textContent = 'Fri 11:30am - 11:00pm';
 
     const sat = document.createElement('span');
-    sat.textContent = 'Sat 11:30am - 9:00pm';
+    sat.textContent = 'Sat 10:00am - 11:00pm';
 
     const sun = document.createElement('span');
-    sun.textContent = 'Sun 11:30am - 9:00pm';
+    sun.textContent = 'Sun 10:00am - 11:00pm';
 
     /***********************/
     /* Contact Section    */
@@ -94,6 +97,9 @@ function createInfo() {
     return info;
 }
 
+/*********************************************************/
+/* Create about section and create/append restaurant ifo */
+/*********************************************************/
 function createAbout() {
     const about = document.createElement('div');
     about.classList.add('component');
@@ -120,9 +126,9 @@ function createAbout() {
     return about;
 }
 
-/*******************************************************/
-/* Function to be called in index.js when loading menu */
-/*******************************************************/
+/********************************************************/
+/* Function to be called in index.js when loading about */
+/********************************************************/
 function loadAbout() {
     const content = document.querySelector('#content');
     content.textContent = "";
